@@ -1,0 +1,79 @@
+What Makes AI Smart? Understanding Models, Data, and Training
+Article 2 of 12 | Demystifying Artificial Intelligence for Strategic Leadership
+
+The Model That Learned Finance
+In 2023, Bloomberg built its own large language model from scratch: BloombergGPT. It was a 50-billion-parameter system trained on more than 700 billion tokens of data. Roughly half of that data came from Bloomberg’s proprietary archive of financial news, filings, analyst reports, and market commentary accumulated over two decades.
+The outcome was predictable but instructive. BloombergGPT outperformed general-purpose models on highly specific financial tasks such as sentiment analysis and headline classification. It understood financial language because it was shaped by financial language.
+Then something interesting happened.
+When researchers compared BloombergGPT to GPT-4—a general-purpose model trained on broader and more diverse data—GPT-4 outperformed it on many financial reasoning tasks.
+The lesson is not about which product is better. The lesson is about how AI actually works.
+Model performance depends on three variables:
+	• The architecture of the model
+	• The data used to train it
+	• The method used to train it
+Understanding these variables changes the quality of the questions you ask when AI proposals land on your desk.
+
+What a Model Actually Is
+An AI model is not just software. It is the output of a training process.
+Think of it like an institutional playbook shaped by experience. An actuarial team, an investment desk, and a compliance function would each write very different playbooks because they were trained on different data and optimized for different outcomes.
+AI models are no different.
+A model contains millions or billions of learned numerical patterns. These patterns allow it to transform input into output. The differences between models come down to:
+	• What data shaped them
+	• How complex their architecture is
+	• What objective they were optimized to achieve
+When your team talks about “foundation models,” they mean large general-purpose systems trained on broad datasets. When they propose “fine-tuning,” they mean adapting one of those systems to your specific data and context.
+The executive question is never “Which model is best?”
+It is: “Which model fits our data, risk profile, and strategic objective?”
+
+Parameters: Capacity Is Not Accuracy
+Parameters are the internal numerical values that get adjusted during training. Large models may contain hundreds of billions—or even trillions—of them.
+Each parameter captures a small pattern learned from data. Together, they encode the model’s “experience.”
+More parameters increase capacity for nuance. But more capacity does not automatically mean better performance for your use case.
+A smaller model trained on high-quality domain data can outperform a much larger general-purpose model in specialized tasks. Bloomberg’s experiment demonstrated that. GPT-4’s broader success demonstrated the counterpoint.
+Scale matters. But relevance matters more.
+For leaders, parameter count signals computational cost and capability range, not guaranteed precision.
+
+How Models Learn
+The training method determines what a model can do—and where it will fail. There are three dominant approaches.
+Supervised learning uses labeled examples. The model learns from historical decisions paired with known outcomes. This is the backbone of credit scoring, fraud detection, underwriting classification, and churn prediction. It performs well when high-quality labeled data exists. If the labels are biased or flawed, the model will faithfully learn those flaws.
+Unsupervised learning looks for patterns without labels. It discovers clusters, anomalies, or hidden structures in data. This supports segmentation, anomaly detection, and portfolio risk discovery. Its strength is pattern discovery. Its weakness is interpretability.
+Reinforcement learning trains through feedback. The model takes actions, receives rewards or penalties, and optimizes over time. This underpins algorithmic trading, dynamic pricing, and large language model alignment. Its power lies in optimization. Its risk lies in optimizing for the wrong objective if guardrails are weak.
+If you know which training method underlies an AI tool, you can anticipate its strengths—and its blind spots.
+
+Hallucination: Probability Is Not Truth
+Language models generate responses by predicting the most probable next word in a sequence. They are optimized for coherence, not factual accuracy.
+When signals in training data are weak or conflicting, the model does not say, “I don’t know.” It generates the most statistically plausible continuation.
+That is hallucination.
+In financial services, this creates real risk. A model may confidently reference regulations that do not exist, fabricate case law, or construct financial assumptions without grounding.
+Hallucination is not a bug that disappears with better prompts. It is structural.
+Production systems using generative AI must include human verification, audit trails, and governance workflows. The model does not know when it is wrong.
+
+The Black Box Problem
+Advanced AI models are often opaque. With billions of parameters trained across vast datasets, it is difficult to trace specific outputs back to specific inputs.
+This creates tension in regulated industries.
+If a regulator asks why a loan was denied, “the model decided” is not defensible. Explainability and auditability are governance requirements.
+There are emerging techniques—feature attribution, attention analysis, model distillation—but the trade-off remains:
+More complex models are typically harder to explain.
+Leaders must factor explainability into deployment decisions, especially in lending, underwriting, claims, and compliance workflows.
+Accuracy without transparency can still create regulatory exposure.
+
+Executive Takeaways
+Training data drives performance. Data governance is strategic infrastructure.
+Model size does not equal model suitability. Fit matters more than scale.
+Training method predicts failure mode. Understand what type of learning underpins the system.
+Hallucination is structural. Human review is mandatory in high-impact workflows.
+Explainability is not optional in regulated industries.
+
+Coming Next
+Article 3: The Anatomy of an LLM: What It Really Is and How It Works
+Large language models are often described as if they are digital minds. They are not.
+In the next article, we move beyond terminology and examine what an LLM actually is at a structural level. What is a transformer architecture? What role do tokens play? What happens between input and output? Why do these systems scale the way they do?
+Understanding the anatomy of an LLM eliminates both mystique and misplaced fear. It gives leaders the clarity to separate engineering reality from marketing language, and to evaluate vendor claims with precision rather than assumption.
+Executive fluency does not require writing code. It requires understanding what is happening under the hood.
+
+References
+
+Wu et al., BloombergGPT: A Large Language Model for Finance, 2023
+OpenAI, GPT-4 Technical Report, 2023
+Ouyang et al., Training Language Models to Follow Instructions with Human Feedback, 2022
+

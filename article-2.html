@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Makes AI Smart? Understanding Models, Data & Training | AI Fluency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="article.css">
+</head>
+<body>
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress">
+        <div class="progress-bar"></div>
+    </div>
+
+    <!-- Cursor follower -->
+    <div class="cursor-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="nav article-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">◈</span>
+                <span class="logo-text">AI<span class="logo-accent">Fluency</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html#insights" class="nav-link">Insights</a>
+                <a href="index.html#perspectives" class="nav-link">Perspectives</a>
+                <a href="index.html#frameworks" class="nav-link">Frameworks</a>
+                <a href="index.html#futures" class="nav-link">Futures</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-icon sun">☀</span>
+                    <span class="theme-icon moon">☾</span>
+                </button>
+                <a href="index.html#subscribe" class="btn-subscribe">Subscribe</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Article Hero -->
+    <header class="article-hero">
+        <div class="hero-bg">
+            <div class="grid-overlay"></div>
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="noise-overlay"></div>
+        </div>
+        <div class="article-hero-content">
+            <div class="article-series">
+                <span class="series-badge">Series</span>
+                <span class="series-title">Demystifying AI for Strategic Leadership</span>
+                <span class="series-part">Article 2 of 12</span>
+            </div>
+            <h1 class="article-title">
+                <span class="title-line">What Makes AI</span>
+                <span class="title-line title-emphasis">Smart?</span>
+                <span class="title-line">Understanding Models, Data & Training</span>
+            </h1>
+            <div class="article-meta-hero">
+                <div class="meta-author">
+                    <div class="author-avatar-lg">AI</div>
+                    <div class="author-details">
+                        <span class="author-name">AI Fluency Editorial</span>
+                        <span class="author-title">Strategic Intelligence Team</span>
+                    </div>
+                </div>
+                <div class="meta-stats">
+                    <div class="stat">
+                        <span class="stat-icon">◷</span>
+                        <span class="stat-value">14 min read</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-icon">◈</span>
+                        <span class="stat-value">Feb 15, 2026</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <span>Begin reading</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </header>
+
+    <!-- Article Content -->
+    <article class="article-container">
+        <aside class="article-sidebar">
+            <div class="sidebar-sticky">
+                <div class="toc">
+                    <h4 class="toc-title">Contents</h4>
+                    <nav class="toc-nav">
+                        <a href="#bloomberg" class="toc-link active">The Model That Learned Finance</a>
+                        <a href="#what-is-model" class="toc-link">What a Model Actually Is</a>
+                        <a href="#parameters" class="toc-link">Parameters: Capacity vs Accuracy</a>
+                        <a href="#how-models-learn" class="toc-link">How Models Learn</a>
+                        <a href="#hallucination" class="toc-link">Hallucination</a>
+                        <a href="#black-box" class="toc-link">The Black Box Problem</a>
+                        <a href="#takeaways" class="toc-link">Executive Takeaways</a>
+                    </nav>
+                </div>
+                <div class="share-widget">
+                    <span class="share-label">Share</span>
+                    <div class="share-buttons">
+                        <button class="share-btn" aria-label="Share on LinkedIn">in</button>
+                        <button class="share-btn" aria-label="Share on Twitter">𝕏</button>
+                        <button class="share-btn" aria-label="Copy link">⎘</button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <div class="article-main">
+            <!-- Opening Quote -->
+            <div class="article-opening">
+                <div class="opening-quote">
+                    <span class="quote-icon">"</span>
+                    <p>The goal is not to build AI that is smarter than us. The goal is to build AI we are smart enough to use well.</p>
+                    <cite>— Adapted from AI Fluency Principles</cite>
+                </div>
+            </div>
+
+            <!-- Section: Bloomberg -->
+            <section class="article-section" id="bloomberg">
+                <h2 class="section-heading">
+                    <span class="heading-number">01</span>
+                    <span class="heading-text">The Model That Learned Finance</span>
+                </h2>
+
+                <div class="content-block">
+                    <p class="lead-paragraph">In 2023, Bloomberg built its own large language model from scratch: <strong>BloombergGPT</strong>. It was a 50-billion-parameter system trained on more than 700 billion tokens of data. Roughly half came from Bloomberg's proprietary archive of financial news, filings, analyst reports, and market commentary accumulated over two decades.</p>
+
+                    <div class="highlight-stat">
+                        <div class="stat-number">50B</div>
+                        <div class="stat-description">parameters in BloombergGPT, trained on 700 billion tokens of financial and general data</div>
+                    </div>
+
+                    <p>The outcome was predictable but instructive. BloombergGPT <strong>outperformed general-purpose models</strong> on highly specific financial tasks such as sentiment analysis and headline classification. It understood financial language because it was <em>shaped</em> by financial language.</p>
+
+                    <p>Then something interesting happened.</p>
+
+                    <div class="callout callout-warning">
+                        <div class="callout-icon">⚡</div>
+                        <div class="callout-content">
+                            <h4>The Plot Twist</h4>
+                            <p>When researchers compared BloombergGPT to GPT-4 — a general-purpose model trained on broader and more diverse data — <strong>GPT-4 outperformed it</strong> on many financial reasoning tasks.</p>
+                        </div>
+                    </div>
+
+                    <p>The lesson is not about which product is better. The lesson is about <strong>how AI actually works</strong>.</p>
+
+                    <div class="key-insight">
+                        <p>Model performance depends on three variables: the <strong>architecture</strong> of the model, the <strong>data</strong> used to train it, and the <strong>method</strong> used to train it. Understanding these variables changes the quality of the questions you ask when AI proposals land on your desk.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Visual Divider -->
+            <div class="section-divider">
+                <span class="divider-icon">◈</span>
+            </div>
+
+            <!-- Section: What a Model Is -->
+            <section class="article-section" id="what-is-model">
+                <h2 class="section-heading">
+                    <span class="heading-number">02</span>
+                    <span class="heading-text">What a Model Actually Is</span>
+                </h2>
+
+                <div class="content-block">
+                    <p class="lead-paragraph">An AI model is not just software. It is the <em>output</em> of a training process.</p>
+
+                    <div class="analogy-box">
+                        <div class="analogy-header">
+                            <span class="analogy-icon">💡</span>
+                            <span class="analogy-label">Think of it this way</span>
+                        </div>
+                        <div class="analogy-content">
+                            <p>Think of it like an institutional playbook shaped by experience. An <strong>actuarial team</strong>, an <strong>investment desk</strong>, and a <strong>compliance function</strong> would each write very different playbooks — because they were trained on different data and optimized for different outcomes.</p>
+                            <p class="analogy-punchline">AI models are no different. A model contains millions or billions of learned numerical patterns that transform input into output.</p>
+                        </div>
+                    </div>
+
+                    <p>The differences between models come down to three things:</p>
+
+                    <div class="comparison-grid">
+                        <div class="comparison-item">
+                            <div class="comparison-header">
+                                <span class="comparison-icon">📊</span>
+                                <span class="comparison-label">Data</span>
+                            </div>
+                            <ul class="comparison-list">
+                                <li>What information shaped the model</li>
+                                <li>Quality, volume, and relevance of training data</li>
+                                <li>Domain-specific vs. general-purpose sources</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-divider">
+                            <span>+</span>
+                        </div>
+                        <div class="comparison-item">
+                            <div class="comparison-header">
+                                <span class="comparison-icon">🏗️</span>
+                                <span class="comparison-label">Architecture</span>
+                            </div>
+                            <ul class="comparison-list">
+                                <li>How complex the model's structure is</li>
+                                <li>The number and arrangement of layers</li>
+                                <li>The computational design choices</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="concept-card">
+                        <div class="concept-header">
+                            <span class="concept-icon">🎯</span>
+                            <h3>Objective: What Was It Built to Do?</h3>
+                        </div>
+                        <div class="concept-body">
+                            <p>Every model is optimized to achieve a specific objective. A model trained to classify sentiment reads the world differently than one trained to generate text or detect fraud.</p>
+                            <p>When your team talks about <strong>"foundation models,"</strong> they mean large general-purpose systems trained on broad datasets. When they propose <strong>"fine-tuning,"</strong> they mean adapting one of those systems to your specific data and context.</p>
+                        </div>
+                    </div>
+
+                    <blockquote class="pull-quote pull-quote-accent">
+                        <p>The executive question is never "Which model is best?" It is: <strong>"Which model fits our data, risk profile, and strategic objective?"</strong></p>
+                    </blockquote>
+                </div>
+            </section>
+
+            <!-- Visual Divider -->
+            <div class="section-divider">
+                <span class="divider-icon">◈</span>
+            </div>
+
+            <!-- Section: Parameters -->
+            <section class="article-section" id="parameters">
+                <h2 class="section-heading">
+                    <span class="heading-number">03</span>
+                    <span class="heading-text">Parameters: Capacity Is Not Accuracy</span>
+                </h2>
+
+                <div class="content-block">
+                    <p class="lead-paragraph">Parameters are the internal numerical values that get adjusted during training. Large models may contain hundreds of billions — or even trillions — of them.</p>
+
+                    <p>Each parameter captures a small pattern learned from data. Together, they encode the model's "experience."</p>
+
+                    <div class="spectrum-visual">
+                        <div class="spectrum-header">The Parameter Paradox</div>
+                        <div class="spectrum-bar">
+                            <div class="spectrum-point general">
+                                <span class="point-label">More Parameters</span>
+                                <span class="point-desc">Greater capacity for nuance</span>
+                                <span class="point-trait">Higher compute cost</span>
+                            </div>
+                            <div class="spectrum-arrow">≠</div>
+                            <div class="spectrum-point specialized">
+                                <span class="point-label">Better Performance</span>
+                                <span class="point-desc">For your specific use case</span>
+                                <span class="point-trait">Relevance wins</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="callout callout-action">
+                        <div class="callout-icon">🎯</div>
+                        <div class="callout-content">
+                            <h4>The Bloomberg Lesson</h4>
+                            <p>A smaller model trained on high-quality domain data can outperform a much larger general-purpose model in specialized tasks. Bloomberg's experiment demonstrated that. GPT-4's broader success demonstrated the counterpoint.</p>
+                        </div>
+                    </div>
+
+                    <blockquote class="pull-quote">
+                        <p>Scale matters. But <strong>relevance</strong> matters more.</p>
+                    </blockquote>
+
+                    <p>For leaders, parameter count signals <strong>computational cost and capability range</strong>, not guaranteed precision. The next time a vendor pitches you on a model with a trillion parameters, the right follow-up question is: <em>"What data was it trained on, and how does that match our domain?"</em></p>
+                </div>
+            </section>
+
+            <!-- Visual Divider -->
+            <div class="section-divider">
+                <span class="divider-icon">◈</span>
+            </div>
+
+            <!-- Section: How Models Learn -->
+            <section class="article-section" id="how-models-learn">
+                <h2 class="section-heading">
+                    <span class="heading-number">04</span>
+                    <span class="heading-text">How Models Learn</span>
+                </h2>
+
+                <div class="content-block">
+                    <p class="lead-paragraph">The training method determines what a model can do — and where it will fail. There are three dominant approaches.</p>
+
+                    <div class="learning-methods">
+                        <div class="method-card">
+                            <div class="method-icon">📋</div>
+                            <h3>Supervised Learning</h3>
+                            <p class="method-desc">Uses <strong>labeled examples</strong>. The model learns from historical decisions paired with known outcomes. This is the backbone of credit scoring, fraud detection, underwriting classification, and churn prediction.</p>
+                            <div class="method-analogy">
+                                <span class="analogy-tag">Strength:</span>
+                                <span>Precision with quality labels</span>
+                            </div>
+                            <div class="example-box" style="margin-top: 16px;">
+                                <span class="example-label">Watch out</span>
+                                <p>If the labels are biased or flawed, the model will faithfully learn those flaws.</p>
+                            </div>
+                        </div>
+
+                        <div class="method-card">
+                            <div class="method-icon">🔍</div>
+                            <h3>Unsupervised Learning</h3>
+                            <p class="method-desc">Looks for <strong>patterns without labels</strong>. It discovers clusters, anomalies, or hidden structures in data. This supports segmentation, anomaly detection, and portfolio risk discovery.</p>
+                            <div class="method-analogy">
+                                <span class="analogy-tag">Strength:</span>
+                                <span>Discovering the unknown</span>
+                            </div>
+                            <div class="example-box" style="margin-top: 16px;">
+                                <span class="example-label">Watch out</span>
+                                <p>Its power is pattern discovery. Its weakness is interpretability — it finds patterns but can't always explain them.</p>
+                            </div>
+                        </div>
+
+                        <div class="method-card">
+                            <div class="method-icon">🎮</div>
+                            <h3>Reinforcement Learning</h3>
+                            <p class="method-desc">Trains through <strong>feedback</strong>. The model takes actions, receives rewards or penalties, and optimizes over time. This underpins algorithmic trading, dynamic pricing, and large language model alignment.</p>
+                            <div class="method-analogy">
+                                <span class="analogy-tag">Strength:</span>
+                                <span>Optimization through trial</span>
+                            </div>
+                            <div class="example-box example-warning" style="margin-top: 16px;">
+                                <span class="example-label">Watch out</span>
+                                <p>Its risk lies in optimizing for the <strong>wrong objective</strong> if guardrails are weak.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="key-insight">
+                        <p>If you know which training method underlies an AI tool, you can anticipate its strengths — <strong>and its blind spots</strong>.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Visual Divider -->
+            <div class="section-divider">
+                <span class="divider-icon">◈</span>
+            </div>
+
+            <!-- Section: Hallucination -->
+            <section class="article-section" id="hallucination">
+                <h2 class="section-heading">
+                    <span class="heading-number">05</span>
+                    <span class="heading-text">Hallucination: Probability Is Not Truth</span>
+                </h2>
+
+                <div class="content-block">
+                    <p class="lead-paragraph">Language models generate responses by predicting the most probable next word in a sequence. They are optimized for <em>coherence</em>, not factual accuracy.</p>
+
+                    <p>When signals in training data are weak or conflicting, the model does not say, "I don't know." It generates the most statistically plausible continuation.</p>
+
+                    <div class="limitation-card limitation-critical">
+                        <div class="limitation-header">
+                            <span class="limitation-icon">🎭</span>
+                            <h3>That Is Hallucination</h3>
+                        </div>
+                        <div class="limitation-body">
+                            <p>In financial services, this creates <strong>real risk</strong>. A model may confidently:</p>
+                            <ul class="check-list negative">
+                                <li>Reference regulations that do not exist</li>
+                                <li>Fabricate case law</li>
+                                <li>Construct financial assumptions without grounding</li>
+                                <li><strong>And present all of it with perfect confidence</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="callout callout-critical">
+                        <div class="callout-icon">⚠</div>
+                        <div class="callout-content">
+                            <h4>This Is Not a Bug</h4>
+                            <p>Hallucination is not a bug that disappears with better prompts. <strong>It is structural.</strong> The model does not know when it is wrong.</p>
+                        </div>
+                    </div>
+
+                    <div class="risk-cascade">
+                        <div class="cascade-step">
+                            <span class="step-number">1</span>
+                            <div class="step-content">
+                                <h4>Model generates plausible-sounding output</h4>
+                                <p>Optimized for coherence, not truth</p>
+                            </div>
+                        </div>
+                        <div class="cascade-arrow">↓</div>
+                        <div class="cascade-step">
+                            <span class="step-number">2</span>
+                            <div class="step-content">
+                                <h4>Output passes the "sounds right" test</h4>
+                                <p>Confident language, logical structure, proper formatting</p>
+                            </div>
+                        </div>
+                        <div class="cascade-arrow">↓</div>
+                        <div class="cascade-step step-danger">
+                            <span class="step-number">3</span>
+                            <div class="step-content">
+                                <h4>Unverified output enters decision workflow</h4>
+                                <p>Fabricated data reaches board decks, compliance filings, or client reports</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>Production systems using generative AI <strong>must</strong> include human verification, audit trails, and governance workflows.</p>
+                </div>
+            </section>
+
+            <!-- Visual Divider -->
+            <div class="section-divider">
+                <span class="divider-icon">◈</span>
+            </div>
+
+            <!-- Section: Black Box -->
+            <section class="article-section" id="black-box">
+                <h2 class="section-heading">
+                    <span class="heading-number">06</span>
+                    <span class="heading-text">The Black Box Problem</span>
+                </h2>
+
+                <div class="content-block">
+                    <p class="lead-paragraph">Advanced AI models are often opaque. With billions of parameters trained across vast datasets, it is difficult to trace specific outputs back to specific inputs.</p>
+
+                    <p>This creates tension in regulated industries.</p>
+
+                    <div class="limitation-card">
+                        <div class="limitation-header">
+                            <span class="limitation-icon">🏛️</span>
+                            <h3>The Regulatory Reality</h3>
+                        </div>
+                        <div class="limitation-body">
+                            <p>If a regulator asks why a loan was denied, <strong>"the model decided"</strong> is not defensible. Explainability and auditability are governance requirements.</p>
+
+                            <div class="cannot-grid">
+                                <div class="cannot-item">
+                                    <span class="cannot-icon">🔬</span>
+                                    <span>Feature Attribution</span>
+                                </div>
+                                <div class="cannot-item">
+                                    <span class="cannot-icon">👁️</span>
+                                    <span>Attention Analysis</span>
+                                </div>
+                                <div class="cannot-item">
+                                    <span class="cannot-icon">🧪</span>
+                                    <span>Model Distillation</span>
+                                </div>
+                                <div class="cannot-item">
+                                    <span class="cannot-icon">⚖️</span>
+                                    <span>Emerging but Incomplete</span>
+                                </div>
+                            </div>
+
+                            <p>There are emerging techniques, but the trade-off remains:</p>
+                        </div>
+                    </div>
+
+                    <blockquote class="pull-quote pull-quote-accent">
+                        <p>More complex models are typically harder to explain. Accuracy without transparency can still create <strong>regulatory exposure</strong>.</p>
+                    </blockquote>
+
+                    <div class="callout callout-action">
+                        <div class="callout-icon">🎯</div>
+                        <div class="callout-content">
+                            <h4>Leadership Responsibility</h4>
+                            <p>Leaders must factor explainability into deployment decisions, especially in <strong>lending, underwriting, claims, and compliance workflows</strong>. A high-performing model that cannot be explained is a liability, not an asset.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Visual Divider -->
+            <div class="section-divider">
+                <span class="divider-icon">◈</span>
+            </div>
+
+            <!-- Section: Takeaways -->
+            <section class="article-section" id="takeaways">
+                <h2 class="section-heading">
+                    <span class="heading-number">07</span>
+                    <span class="heading-text">Executive Takeaways</span>
+                </h2>
+
+                <div class="takeaways-container">
+                    <div class="takeaway-card">
+                        <div class="takeaway-number">01</div>
+                        <div class="takeaway-content">
+                            <h4>Training data drives performance</h4>
+                            <p>Data governance is strategic infrastructure. The quality of what goes in determines the quality of what comes out. Invest in data before investing in models.</p>
+                        </div>
+                    </div>
+
+                    <div class="takeaway-card">
+                        <div class="takeaway-number">02</div>
+                        <div class="takeaway-content">
+                            <h4>Model size does not equal model suitability</h4>
+                            <p>Fit matters more than scale. A focused model trained on relevant data will often outperform a giant trained on everything. Ask about data, not just parameter count.</p>
+                        </div>
+                    </div>
+
+                    <div class="takeaway-card">
+                        <div class="takeaway-number">03</div>
+                        <div class="takeaway-content">
+                            <h4>Training method predicts failure mode</h4>
+                            <p>Understand what type of learning underpins the system. Supervised, unsupervised, and reinforcement learning each have distinct strengths and blind spots.</p>
+                        </div>
+                    </div>
+
+                    <div class="takeaway-card">
+                        <div class="takeaway-number">04</div>
+                        <div class="takeaway-content">
+                            <h4>Hallucination is structural</h4>
+                            <p>Human review is mandatory in high-impact workflows. The model does not know when it is wrong. Build verification into every production pipeline.</p>
+                        </div>
+                    </div>
+
+                    <div class="takeaway-card">
+                        <div class="takeaway-number">05</div>
+                        <div class="takeaway-content">
+                            <h4>Explainability is not optional in regulated industries</h4>
+                            <p>Accuracy without transparency creates regulatory exposure. Factor interpretability into every model selection decision.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Next Article CTA -->
+            <section class="next-article">
+                <div class="next-article-content">
+                    <span class="next-label">Coming Next</span>
+                    <h3 class="next-title">Article 3: The Anatomy of an LLM</h3>
+                    <p class="next-subtitle">What It Really Is and How It Works</p>
+                    <p class="next-description">Large language models are often described as if they are digital minds. They are not. In the next article, we examine what an LLM actually is at a structural level. What is a transformer architecture? What role do tokens play? What happens between input and output? Understanding the anatomy eliminates both mystique and misplaced fear.</p>
+                    <a href="#" class="next-button">
+                        <span>Read Article 3</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="next-article-visual">
+                    <div class="visual-decoration">
+                        <span class="deco-text">03</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- References -->
+            <section class="article-references">
+                <h4 class="references-title">References</h4>
+                <ul class="references-list">
+                    <li>Wu et al., <em>BloombergGPT: A Large Language Model for Finance</em>, 2023</li>
+                    <li>OpenAI, <em>GPT-4 Technical Report</em>, 2023</li>
+                    <li>Ouyang et al., <em>Training Language Models to Follow Instructions with Human Feedback</em>, 2022</li>
+                </ul>
+            </section>
+
+            <!-- Series Footer -->
+            <footer class="article-footer">
+                <div class="series-info">
+                    <p>This is <strong>Article 2 of 12</strong> in the series: <em>Demystifying Artificial Intelligence for Strategic Leadership</em></p>
+                    <p>Follow along to build the executive fluency you need to lead confidently and decisively in the age of AI.</p>
+                </div>
+                <div class="article-actions">
+                    <a href="index.html#subscribe" class="action-btn primary">
+                        <span>Subscribe to The Brief</span>
+                    </a>
+                    <button class="action-btn secondary share-article">
+                        <span>Share Article</span>
+                    </button>
+                </div>
+            </footer>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    <span class="logo-icon">◈</span>
+                    <span class="logo-text">AI<span class="logo-accent">Fluency</span></span>
+                </a>
+                <p class="footer-tagline">Empowering the next generation of AI-literate leadership.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Content</h4>
+                    <a href="index.html#insights">Insights</a>
+                    <a href="index.html#perspectives">Perspectives</a>
+                    <a href="index.html#frameworks">Frameworks</a>
+                    <a href="index.html#futures">Futures</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <a href="#">Executive Guides</a>
+                    <a href="#">Webinars</a>
+                    <a href="#">Podcasts</a>
+                    <a href="#">Research</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <a href="#">About</a>
+                    <a href="#">Contributors</a>
+                    <a href="#">Partnerships</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">© 2026 AI Fluency. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="#" aria-label="LinkedIn">in</a>
+                <a href="#" aria-label="Twitter">𝕏</a>
+                <a href="#" aria-label="Newsletter">✉</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="article.js"></script>
+</body>
+</html>

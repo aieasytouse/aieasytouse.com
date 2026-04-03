@@ -1626,3 +1626,137 @@ body:hover .cursor-glow {
         text-align: center;
     }
 }
+
+/* ================================
+   Series Navigator Section
+   ================================ */
+
+.series-nav-section {
+    padding: 120px 40px;
+    background: var(--bg-secondary);
+}
+
+.series-description {
+    max-width: 680px;
+    margin: 0 0 60px;
+}
+
+.series-description p {
+    font-family: var(--font-serif);
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+.series-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    background: var(--border-subtle);
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.series-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 24px;
+    background: var(--bg-primary);
+    transition: background 0.2s ease;
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+.series-item.series-published {
+    cursor: pointer;
+}
+
+.series-item.series-published:hover {
+    background: var(--bg-elevated);
+}
+
+.series-item.series-latest {
+    background: rgba(0, 212, 255, 0.04);
+    border-left: 2px solid var(--accent-primary);
+}
+
+.series-item.series-latest:hover {
+    background: rgba(0, 212, 255, 0.08);
+}
+
+.series-item.series-upcoming {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.series-num {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    min-width: 28px;
+}
+
+.series-info {
+    flex: 1;
+}
+
+.series-info .series-status {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 4px;
+}
+
+.series-published .series-status {
+    color: var(--accent-primary);
+}
+
+.series-latest .series-status {
+    color: var(--accent-primary);
+    font-weight: 600;
+}
+
+.series-upcoming .series-status {
+    color: var(--text-muted);
+}
+
+.series-info h4 {
+    font-family: var(--font-display);
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.series-arrow {
+    color: var(--text-muted);
+    transition: transform 0.2s ease, color 0.2s ease;
+    flex-shrink: 0;
+}
+
+.series-published:hover .series-arrow {
+    transform: translateX(4px);
+    color: var(--accent-primary);
+}
+
+/* Coming soon card */
+.coming-soon-card {
+    opacity: 0.6;
+    pointer-events: none;
+    cursor: default;
+}
+
+[data-theme="light"] .series-nav-section {
+    background: var(--bg-secondary);
+}
+
+@media (max-width: 768px) {
+    .series-grid {
+        grid-template-columns: 1fr;
+    }
+}

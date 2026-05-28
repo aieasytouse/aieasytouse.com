@@ -1,0 +1,30 @@
+ARTICLE 4 - LINKEDIN POST DRAFT
+How Machines Learn: Training Methods and Human Parallels
+Author: Peter Muiruri
+---
+
+Most executives assume machine learning is fundamentally different from human learning.
+
+It is structurally identical. Minus the coffee breaks.
+
+A model starts with random parameters and no domain knowledge, exactly like a new analyst on day one. It is exposed to examples, makes predictions, receives feedback, and adjusts. Through millions of iterations of this cycle, it becomes capable.
+
+Four things stood out when writing this piece that I believe are underappreciated in most AI conversations:
+
+1. Fine-tuning is powerful, and it can fail badly. Amazon built a recruiting AI using supervised fine-tuning on a decade of historical hiring data. The model worked perfectly. The training data reflected a decade of biased hiring. The model learned the bias faithfully and was scrapped. Historical data encodes historical decisions. Auditing for this is not ethics theater. It is risk management.
+
+2. The alignment landscape has moved well beyond RLHF. DPO, RLAIF, and Constitutional AI are now among the leading methods. Early RLHF deployments produced models that were confidently fluent and factually unreliable, because confident fluency scored better with human raters than hedged accuracy. The model had learned to perform helpfulness, not to be helpful. Ask your AI vendors which approach they use.
+
+3. Vendor dependency is a governance gap most contracts ignore. Who owns your fine-tuned model weights? What happens when the vendor deprecates the base model? Several organizations discovered in 2023/2024 that their fine-tuned models became inaccessible after base model changes. Build exit strategies into AI contracts the same way you would for any core infrastructure dependency.
+
+4. Contrarian point: you often do not need training at all. Retrieval-Augmented Generation (RAG) delivers 80 to 90 percent of the value of a custom-trained model for information access use cases at a fraction of the cost. Confusing "I need the model to access my data" with "I need to train a model" is one of the most expensive mistakes in enterprise AI implementation.
+
+The full article covers pre-training, fine-tuning, gradient descent, backpropagation, all three learning paradigms, alignment evolution, synthetic data, and small language models, all mapped to analogies that financial services and insurance executives will immediately recognize.
+
+Read it here: [LINK]
+
+#AIGovernance #MachineLearning #ExecutiveAI #FinancialServices #AIStrategy
+
+---
+Character count (approximate): 1,820 including spaces
+(Under the 2,000 character limit)

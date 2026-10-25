@@ -1,0 +1,28 @@
+ARTICLE 5: LINKEDIN POST DRAFT
+The AI Toolbox: From Chatbots to Autonomous Agents (Inside P&C General Account Investment Accounting)
+Author: Peter Muiruri
+---
+
+"AI" is not one tool. It is a toolbox, and treating a chatbot, a copilot, and an autonomous agent as the same thing is where most executive confusion starts.
+
+In Article 5 I lay out five tools on a ladder: rules-based automation as the foundation, then the grounded chatbot, the copilot, the agent, and the multi-agent system. Each rung adds autonomy. Each rung raises the bar for control.
+
+To make it concrete, I put the toolbox to work somewhere demanding: a P&C carrier with $24 billion in general account investments, six insurance entities, three custodians, eleven external managers, 200+ private fund interests, a custom-built investment accounting subledger, an SAP ledger, SAP Analytics Cloud, and MicroStrategy reporting. Every quarter, the same 9,500 positions close twice: GAAP for the SEC, statutory for the regulators.
+
+Three things stood out:
+
+1. At scale, the value lives in the seams. No single system is broken. The cost sits in the handoffs between custodians, subledger, SAP, and the reporting layer. That is where agents earn their keep: monitoring files, sequencing jobs, confirming tie-outs, and routing exceptions, while the systems of record keep the numbers.
+
+2. Schedule BA is the clearest copilot win. Private fund statements arrive as unstructured PDFs. Two hours per fund across 200+ funds is 400+ hours a quarter. Copilot extraction with human review brings that to around 50.
+
+3. AI commentary fails quietly. A draft that blames widening unrealized losses on credit spreads when rates were the real driver sounds authoritative. Build traceability into the control design from day one.
+
+The rule that holds on every rung: rules own the numbers, AI owns the reading and the explanation, and people own the judgment and the signature.
+
+Read the full article: [LINK]
+
+#AIStrategy #PropertyCasualty #InvestmentAccounting #InsuranceAccounting #AgenticAI #NAIC #AIGovernance
+
+---
+Word count: approximately 290 words
+(Under the 300-word target)

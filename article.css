@@ -1469,3 +1469,207 @@
         justify-content: center;
     }
 }
+
+
+/* ================================
+   Legible Reading Mode (opt-in: <body class="article-legible">)
+   Inter for running text, Syne kept for headings, Cormorant only for large display accents
+   ================================ */
+.article-legible {
+    --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    --text-body: #d4d4d8;
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+[data-theme="light"] .article-legible {
+    --text-body: #3f3f46;
+}
+
+.article-legible .content-block p {
+    font-family: var(--font-body);
+    font-size: 1.125rem;
+    line-height: 1.75;
+    letter-spacing: -0.003em;
+    color: var(--text-body);
+}
+
+.article-legible .lead-paragraph {
+    font-size: 1.25rem !important;
+    line-height: 1.65;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+}
+
+.article-legible .content-block strong {
+    font-weight: 600;
+}
+
+.article-legible .callout-content p,
+.article-legible .analogy-content p {
+    font-size: 1rem !important;
+    line-height: 1.7;
+}
+
+.article-legible .callout-content h4 {
+    font-size: 1.0625rem;
+    line-height: 1.4;
+}
+
+.article-legible .heading-text {
+    line-height: 1.25;
+}
+
+.article-legible .opening-quote p {
+    font-size: 1.625rem;
+    font-weight: 500;
+    line-height: 1.45;
+    color: var(--text-primary);
+}
+
+.article-legible .author-details .author-title,
+.article-legible .toc-link {
+    font-family: var(--font-body);
+}
+
+.article-legible .toc-link {
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+/* Sources and closing CTA */
+.article-legible .article-footer {
+    margin-top: 64px;
+    padding-top: 48px;
+    border-top: 1px solid var(--border-subtle);
+}
+
+.article-legible .sources-title {
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--text-tertiary);
+    margin-bottom: 16px;
+}
+
+.article-legible .sources-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 48px;
+}
+
+.article-legible .sources-list li {
+    position: relative;
+    padding-left: 20px;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+.article-legible .sources-list li::before {
+    content: '\2192';
+    position: absolute;
+    left: 0;
+    color: var(--accent-primary);
+}
+
+.article-legible .article-cta {
+    padding: 32px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.08) 0%, rgba(124, 58, 237, 0.06) 100%);
+    border: 1px solid var(--border-subtle);
+    margin-bottom: 32px;
+}
+
+.article-legible .cta-title {
+    font-family: var(--font-display);
+    font-size: 1.375rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.article-legible .article-cta p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-body);
+    margin-bottom: 8px;
+}
+
+/* Embedded article video */
+.article-video {
+    margin: 0 0 64px;
+}
+
+.article-legible .article-main {
+    min-width: 0;
+}
+
+.video-frame {
+    position: relative;
+    width: 100%;
+    max-width: 560px;
+    margin: 0 auto;
+    aspect-ratio: 1 / 1;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #0a0a0b;
+    border: 1px solid var(--border-medium);
+    box-shadow: var(--shadow-lg), var(--shadow-glow);
+}
+
+.video-frame video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.article-video figcaption {
+    max-width: 560px;
+    margin: 16px auto 0;
+    font-family: var(--font-body, 'Inter', sans-serif);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    text-align: center;
+}
+
+.video-label {
+    display: inline-block;
+    margin-right: 8px;
+    padding: 2px 10px;
+    border-radius: 999px;
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent-primary);
+    border: 1px solid var(--accent-primary);
+    vertical-align: 2px;
+}
+
+@media (max-width: 768px) {
+    .article-legible .content-block p {
+        font-size: 1.0625rem;
+        line-height: 1.7;
+    }
+
+    .article-legible .lead-paragraph {
+        font-size: 1.125rem !important;
+    }
+
+    .article-legible .opening-quote p {
+        font-size: 1.3125rem;
+        padding-left: 24px;
+    }
+
+    .video-frame {
+        border-radius: 14px;
+    }
+}

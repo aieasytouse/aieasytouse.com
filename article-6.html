@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Risk &amp; Governance: The Executive's Control Framework | AI Fluency</title>
+    <meta name="description" content="Five controls for governing AI as it moves from suggesting to acting: See it, Tier it, Bound it, Prove it, Own it. Applied to a P&amp;C carrier's quarter-end close, with a 30-day plan and seven board indicators.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Syne:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="article.css">
+</head>
+<body class="article-legible">
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress">
+        <div class="progress-bar"></div>
+    </div>
+
+    <!-- Cursor follower -->
+    <div class="cursor-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="nav article-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">◈</span>
+                <span class="logo-text">AI<span class="logo-accent">Fluency</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html#insights" class="nav-link">Latest</a>
+                <a href="index.html#series" class="nav-link">Series</a>
+                <a href="index.html#frameworks" class="nav-link">Frameworks</a>
+                <a href="index.html#futures" class="nav-link">Futures</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-icon sun">☀</span>
+                    <span class="theme-icon moon">☾</span>
+                </button>
+                <a href="index.html#subscribe" class="btn-subscribe">Subscribe</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Article Hero -->
+    <header class="article-hero">
+        <div class="hero-bg">
+            <div class="grid-overlay"></div>
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="noise-overlay"></div>
+        </div>
+        <div class="article-hero-content">
+            <div class="article-series">
+                <span class="series-badge">Series</span>
+                <span class="series-title">Demystifying AI for Strategic Leadership</span>
+                <span class="series-part">Article 6 of 12</span>
+            </div>
+            <h1 class="article-title">
+                <span class="title-line">AI Risk &amp; Governance</span>
+                <span class="title-line title-emphasis">The Executive's Control Framework</span>
+            </h1>
+            <div class="article-meta-hero">
+                <div class="meta-author">
+                    <a href="https://www.linkedin.com/in/peter-m-6168a448/" target="_blank" rel="noopener noreferrer" class="author-avatar-lg">PM</a>
+                    <div class="author-details">
+                        <a href="https://www.linkedin.com/in/peter-m-6168a448/" target="_blank" rel="noopener noreferrer" class="author-name">Peter Muiruri</a>
+                        <span class="author-title">Solutions Architect | AI Strategist</span>
+                    </div>
+                </div>
+                <div class="meta-stats">
+                    <div class="stat">
+                        <span class="stat-icon">◷</span>
+                        <span class="stat-value">18 min read</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-icon">◈</span>
+                        <span class="stat-value">November 17, 2026</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <span>Begin reading</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </header>
+
+    <!-- Article Content -->
+    <article class="article-container">
+        <aside class="article-sidebar">
+            <div class="sidebar-sticky">
+                <div class="toc">
+                    <h4 class="toc-title">Contents</h4>
+                    <nav class="toc-nav">
+                        <a href="#opening-hook" class="toc-link active">"Who Approved That?"</a>
+                        <a href="#framework" class="toc-link">The Control Framework</a>
+                        <a href="#why-now" class="toc-link">Why Governance Is Strategy</a>
+                        <a href="#risks" class="toc-link">Six AI Risks</a>
+                        <a href="#regulation" class="toc-link">The Regulatory Picture</a>
+                        <a href="#controls" class="toc-link">The Five Controls in Practice</a>
+                        <a href="#pc-close" class="toc-link">A P&amp;C Carrier's Close</a>
+                        <a href="#indicators" class="toc-link">Seven Indicators</a>
+                        <a href="#first-30" class="toc-link">Your First 30 Days</a>
+                        <a href="#takeaway" class="toc-link">The Takeaway</a>
+                        <a href="#article7-teaser" class="toc-link">What Comes Next</a>
+                    </nav>
+                </div>
+                <div class="share-widget">
+                    <span class="share-label">Share</span>
+                    <div class="share-buttons">
+                        <button class="share-btn" aria-label="Share on LinkedIn">in</button>
+                        <button class="share-btn" aria-label="Share on Twitter">𝕏</button>
+                        <button class="share-btn" aria-label="Copy link">⎘</button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <div class="article-main">
+            <!-- Opening Quote -->
+            <div class="article-opening">
+                <div class="opening-quote">
+                    <span class="quote-icon">"</span>
+                    <p>A policy tells people what should happen. A control makes it happen and leaves a record.</p>
+                    <cite>The gap this article is about</cite>
+                </div>
+            </div>
+
+            <!-- Section 1 -->
+            <section class="article-section" id="opening-hook">
+                <h2 class="section-heading">
+                    <span class="heading-number">01</span>
+                    <span class="heading-text">"Who Approved That?"</span>
+                </h2>
+
+                <div class="content-block">
+                    <p class="lead-paragraph">In 2025, Deloitte Australia delivered a 237-page review to the Australian Government's Department of Employment and Workplace Relations. Its staff had used a generative AI tool in preparing the report. After publication, an academic noticed that some of the references did not exist. The report cited papers that were never written and a court quotation that was never said. Deloitte issued a corrected version and agreed to repay the final instalment of its fee.</p>
+
+                    <p>A year earlier, a Canadian tribunal ruled on a much smaller case. Air Canada's website chatbot had told a grieving customer he could claim a bereavement fare after his trip. The airline's actual policy said the opposite. When he asked for the refund, Air Canada refused and argued that it was not responsible for what its chatbot said. The tribunal disagreed and ordered the airline to pay.</p>
+
+                    <p>Neither case involved technology running out of control. Both organizations had review processes, and both had the correct information somewhere. The invented references still went out the door, and the chatbot still contradicted the airline's own published policy.</p>
+
+                    <p>In both cases, the hard questions came afterward:</p>
+
+                    <blockquote class="pull-quote">
+                        <p>Who approved that? What evidence supported that approval? And who owns the outcome?</p>
+                    </blockquote>
+
+                    <p>Neither organization had good answers.</p>
+
+                    <p>This is how AI risk tends to show up in established companies. The controls built over decades, such as approvals and segregation of duties, will stop an AI from making a large unauthorized move. What gets through is quieter. It is output that reads well, checked by a reviewer with a deadline, from a tool nobody was assigned to own.</p>
+
+                    <div class="callout callout-insight">
+                        <div class="callout-icon">◈</div>
+                        <div class="callout-content">
+                            <h4>Where This Article Fits in the Series</h4>
+                            <p>Article 5 walked through the AI toolbox, from chatbots to autonomous agents. This article takes up the question that follows. As AI moves from suggesting to acting, how do leaders stay in control?</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider"><span class="divider-icon">◈</span></div>
+
+            <!-- Section 2 -->
+            <section class="article-section" id="framework">
+                <h2 class="section-heading">
+                    <span class="heading-number">02</span>
+                    <span class="heading-text">The Executive Control Framework</span>
+                </h2>
+
+                <div class="content-block">
+                    <p class="lead-paragraph">The answer is five controls: <strong>See it. Tier it. Bound it. Prove it. Own it.</strong> You do not need to understand how a model works to apply any of them. Each comes with a question to ask in your next leadership meeting and the evidence you should expect back.</p>
+
+                    <div class="table-wrap">
+                        <table class="gov-table">
+                            <caption>The five controls</caption>
+                            <thead>
+                                <tr><th scope="col">Control</th><th scope="col">Plain meaning</th><th scope="col">The question to ask</th><th scope="col">NIST AI RMF</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><th scope="row">1. See it</th><td>Know every AI system you run</td><td>"Can we list every AI system touching customer or financial data?"</td><td>Map</td></tr>
+                                <tr><th scope="row">2. Tier it</th><td>Rank each one by how much harm it could do</td><td>"Which systems can act without a person approving?"</td><td>Map, Govern</td></tr>
+                                <tr><th scope="row">3. Bound it</th><td>Limit what each one can reach and do</td><td>"What is the most damage this agent could do on its worst day?"</td><td>Manage</td></tr>
+                                <tr><th scope="row">4. Prove it</th><td>Keep evidence that it works as intended</td><td>"Could we show an examiner the evidence by Friday?"</td><td>Measure</td></tr>
+                                <tr><th scope="row">5. Own it</th><td>Put a name on every system</td><td>"Whose name is on this if it goes wrong?"</td><td>Govern</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p>The last column maps each control to the NIST AI Risk Management Framework, the most widely used reference in the U.S. That mapping matters when a risk officer or auditor asks where your approach comes from.</p>
+
+                    <p>Together, the five controls answer the three opening questions before anyone has to ask them. See it and Tier it tell you what needs approval. Bound it and Prove it supply the evidence. Own it puts a name on the outcome. Each control is covered in detail later in the article. First, here is why this belongs on the leadership agenda now.</p>
+                </div>
+            </section>
+
+            <div class="section-divider"><span class="divider-icon">◈</span></div>
+
+            <!-- Section 3 -->
+            <section class="article-section" id="why-now">
+                <h2 class="section-heading">
+                    <span class="heading-number">03</span>
+                    <span class="heading-text">Why Governance Is Now a Strategy Question</span>
+                </h2>
+
+                <div class="content-block">
+                    <p class="lead-paragraph">Governance used to be something the risk team handled after a project was approved. Three findings explain why it has moved to the leadership table.</p>
+
+                    <p><strong>Weak controls are expected to kill projects.</strong> Gartner predicts that more than 40% of agentic AI projects will be cancelled by the end of 2027. It cites rising costs, unclear business value and inadequate risk controls. Leaders can fix the third one before the money is spent.</p>
+
+                    <p><strong>Unapproved AI is already inside the building.</strong> IBM's 2025 Cost of a Data Breach study looked at 600 organizations that had suffered a breach. One in five reported a breach involving "shadow AI," meaning AI tools staff use without approval. Separately, organizations with high levels of shadow AI paid about $670,000 more per breach on average than those with low levels or none. Among organizations that reported a breach of an AI model or application, 97% lacked proper AI access controls.</p>
+
+                    <p><strong>Policies are being written but not checked.</strong> In the same study, only about a third of organizations with an AI governance policy regularly audited for unsanctioned AI. Most had written the rule and never checked whether anyone followed it.</p>
+
+                    <p>That is the gap this article is about. A policy tells people what should happen. A control makes it happen and leaves a record.</p>
+
+                    <div class="callout callout-action">
+                        <div class="callout-icon">◈</div>
+                        <div class="callout-content">
+                            <h4>Governance Is What Lets You Move Faster</h4>
+                            <p>Companies that close this gap get something more useful than a clean audit: they can move faster. A board will fund an agent that drafts journal entries if someone can show its limits, its logs and its owner. Without them, the board says no, or says yes and regrets it. Good governance is what lets a company scale AI past the pilot.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider"><span class="divider-icon">◈</span></div>
+
+            <!-- Section 4 -->
+            <section class="article-section" id="risks">
+                <h2 class="section-heading">
+                    <span class="heading-number">04</span>
+                    <span class="heading-text">Six AI Risks in Plain Language</span>
+                </h2>
+
+                <div class="content-block">
+                    <p class="lead-paragraph">AI risk gets described in technical terms that hide how ordinary most of it is. A business leader already manages every risk below in some other form. AI changes the speed and the scale.</p>
+
+                    <div class="table-wrap">
+                        <table class="gov-table">
+                            <thead>
+                                <tr><th scope="col">Risk</th><th scope="col">What it looks like in practice</th><th scope="col">Who feels it first</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><th scope="row">Data leakage</th><td>An adjuster pastes claimant records into a free chatbot to summarize them. The data now sits on someone else's servers.</td><td>Privacy, legal, the CISO</td></tr>
+                                <tr><th scope="row">Wrong answers</th><td>An AI drafts commentary for a board report and states a figure that appears nowhere in the source data. It reads well, so nobody checks.</td><td>Finance, anyone who signs the report</td></tr>
+                                <tr><th scope="row">Unfair outcomes</th><td>A model trained on past decisions repeats old patterns. Certain groups get slower claims handling or higher prices, and nobody intended it.</td><td>Compliance, customers, regulators</td></tr>
+                                <tr><th scope="row">Hijacked agents</th><td>An agent reads an email or document that contains hidden instructions. It follows them, using the access the company gave it.</td><td>Security, operations</td></tr>
+                                <tr><th scope="row">Vendor risk</th><td>AI arrives inside software you already own, switched on by an update. You did not choose it, test it or review its terms.</td><td>Procurement, IT, the business owner</td></tr>
+                                <tr><th scope="row">No clear owner</th><td>Something goes wrong, and each of three teams believed another one was responsible.</td><td>The executive who gets the call</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p>The first three risks are about what AI says. The fourth is about what AI does, and it is the newest.</p>
+
+                    <p>The security community has caught up with this shift. In December 2025, OWASP published its first Top 10 for Agentic Applications. The list covers goal hijacking, tool misuse, rogue agents and failures that cascade from one agent to the next. It puts two design principles ahead of everything else: give an agent the least freedom it needs to do the job, and make sure you can see what it is doing.</p>
+
+                    <p>Neither idea is technical. A manager would apply both to a new hire in their first week.</p>
+                </div>
+            </section>
+
+            <div class="section-divider"><span class="divider-icon">◈</span></div>
+
+            <!-- Section 5 -->
+            <section class="article-section" id="regulation">
+                <h2 class="section-heading">
+                    <span class="heading-number">05</span>
+                    <span class="heading-text">The Regulatory Picture: Moving, Not Vanishing</span>
+                </h2>
+
+                <div class="content-block">
+                    <p class="lead-paragraph">Several major AI rules were delayed or rewritten in 2026. It would be easy to read that as regulators backing off. A closer look shows that deadlines have moved while expectations have stayed put.</p>
+
+                    <div class="table-wrap">
+                        <table class="gov-table">
+                            <thead>
+                                <tr><th scope="col">Where</th><th scope="col">What changed in 2026</th><th scope="col">What still applies</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><th scope="row">European Union</th><td>The Digital Omnibus moved the requirements for Annex III high-risk systems (stand-alone uses such as credit scoring and life and health insurance pricing) to 2 December 2027. High-risk AI embedded in regulated products moves to 2 August 2028.</td><td>The high-risk categories and the structure of the Act are unchanged.</td></tr>
+                                <tr><th scope="row">Colorado</th><td>The original AI Act was repealed and reenacted as SB 26-189 before it took effect. The new version is narrower.</td><td>Obligations begin January 1, 2027.</td></tr>
+                                <tr><th scope="row">U.S. federal</th><td>Executive Order 14365 set up a Justice Department task force to challenge state AI laws in court.</td><td>State laws remain enforceable until they are amended, repealed or struck down.</td></tr>
+                                <tr><th scope="row">U.S. insurance</th><td>The NAIC began piloting an AI evaluation tool for examiners to use in market conduct exams.</td><td>As of November 2026, about half the states have adopted the NAIC Model Bulletin, which says existing insurance law applies to AI. See the <a href="https://content.naic.org/sites/default/files/legal-adoption-map-ai-model-bulletin.pdf" target="_blank" rel="noopener noreferrer">NAIC's adoption map</a> for the current list.</td></tr>
+                                <tr><th scope="row">U.S. banking</th><td>Regulators replaced SR 11-7, the model risk guidance in place since 2011, with SR 26-2.</td><td>See below.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3 class="sub-heading">A coverage question for every financial firm</h3>
+
+                    <p>The banking change deserves a closer look, including from readers outside banking.</p>
+
+                    <p>For fifteen years, SR 11-7 was the reference for how financial firms governed models. Insurers, asset managers and others borrowed from it even though it was written for banks.</p>
+
+                    <blockquote class="pull-quote">
+                        <p>In April 2026, U.S. banking regulators replaced SR 11-7 with guidance that excludes generative and agentic AI from its scope. Firms should check that their broader governance frameworks explicitly cover both.</p>
+                    </blockquote>
+
+                    <p>The exclusion does not mean those systems are ungoverned. SR 26-2 points banks to their broader risk management and governance practices for systems outside its scope. A firm's own policies do not stop applying when the reference document changes. The agencies have also said they plan to seek public input on AI.</p>
+
+                    <p>But the exclusion creates a question every leader should resolve: if your model governance standard was modeled on SR 11-7, does it explicitly cover your chatbots and agents, or did everyone assume it did? Ask for the answer in writing.</p>
+
+                    <h3 class="sub-heading">Your vendor's AI is your risk</h3>
+
+                    <p>One point from the insurance rules applies well beyond insurance. The NAIC bulletin applies to insurers, not to the vendors that supply their AI. If a third-party model produces an unfair outcome, the regulator comes to the company that used it.</p>
+
+                    <p>The pattern across all five rows is the same. Dates slip, but the questions regulators ask stay the same: what AI do you run, who owns it, and can you prove it works as intended? Treat a delay as extra time to get those answers ready.</p>
+                </div>
+            </section>
+
+            <div class="section-divider"><span class="divider-icon">◈</span></div>
+
+            <!-- Section 6 -->
+            <section class="article-section" id="controls">
+                <h2 class="section-heading">
+                    <span class="heading-number">06</span>
+                    <span class="heading-text">The Five Controls in Practice</span>
+                </h2>
+
+                <div class="content-block">
+                    <h3 class="sub-heading">1. See it</h3>
+                    <p>You cannot control what you have not counted. An AI inventory should cover four sources: systems you built, systems you bought, AI features inside software you already own, and tools staff use on their own.</p>
+                    <p>Inventories usually fail on the last two. Vendors switch on AI features through routine updates. Staff sign up for tools with a work email and a personal card.</p>
+                    <p><strong>Evidence to expect:</strong> a single register that lists each system, the data it touches, its supplier and its owner. Ask when it was last updated and how shadow AI gets found.</p>
+
+                    <h3 class="sub-heading">2. Tier it</h3>
+                    <p>Not every AI system deserves the same scrutiny. A chatbot that answers HR questions and an agent that posts to the general ledger are different risks.</p>
+                    <p>Rate each system on two things. <strong>Impact</strong> is how much harm a mistake could cause to customers, financial statements or regulatory standing. <strong>Autonomy</strong> is how far the system can act before a person steps in. Article 5 laid out that spectrum, from chatbot to autonomous agent.</p>
+
+                    <div class="table-wrap">
+                        <table class="gov-table">
+                            <caption>Impact × autonomy</caption>
+                            <thead>
+                                <tr><th scope="col">Impact</th><th scope="col">Low autonomy (suggests, a person decides)</th><th scope="col">High autonomy (acts on its own)</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><th scope="row">High impact</th><td><strong>Tier 2:</strong> a named reviewer signs off on every output</td><td><span class="tier-1">Tier 1:</span> full controls, approval limits, executive owner, board visibility</td></tr>
+                                <tr><th scope="row">Low impact</th><td><strong>Tier 4:</strong> standard acceptable-use policy</td><td><strong>Tier 3:</strong> access limits and periodic spot checks</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p><strong>Evidence to expect:</strong> every system in the register carries a tier, and someone can explain why. Watch for systems that drift upward. A tool that started out drafting emails may now send them.</p>
+
+                    <h3 class="sub-heading">3. Bound it</h3>
+                    <p>This is where the OWASP principle of least freedom becomes practical. Treat an agent the way you would treat a new employee with signing authority.</p>
+                    <ul class="article-list">
+                        <li><strong>Access:</strong> it reaches only the systems and data the task needs. It never inherits a senior person's profile.</li>
+                        <li><strong>Thresholds:</strong> above a set amount or risk level, a person must approve.</li>
+                        <li><strong>Limits:</strong> caps on transaction size, volume and spend.</li>
+                        <li><strong>Kill switch:</strong> a named person can stop it at once and knows they have the authority to.</li>
+                    </ul>
+                    <p><strong>Evidence to expect:</strong> written limits for each Tier 1 and Tier 2 system, and proof that the kill switch has been tested.</p>
+
+                    <h3 class="sub-heading">4. Prove it</h3>
+                    <p>Regulators and auditors do not accept good intentions. They ask for records.</p>
+                    <p>That means testing before launch, checks for unfair outcomes where people are affected, monitoring after launch, and a log of what the system did and on what basis. For agents, the log should show each action taken, not only the final result.</p>
+                    <p>Two frameworks help here, and they do different jobs. NIST gives you a voluntary method for running the program day to day. ISO/IEC 42001 is a standard a company can be certified against. NIST has published a crosswalk between the two, so the work is not duplicated. A practical approach is to build your own program on NIST and ask your AI vendors whether they hold ISO 42001 certification.</p>
+                    <p><strong>Evidence to expect:</strong> for any Tier 1 system, a pack with test results, monitoring reports and a sample of decision logs. If it takes weeks to assemble, the control is not working.</p>
+
+                    <h3 class="sub-heading">5. Own it</h3>
+                    <p>Every system needs one named executive who answers for it. A committee can advise, but it cannot be the owner.</p>
+                    <p>The owner should sit in the business, not in IT. The person who benefits from the agent's work is best placed to judge whether the risk is worth it. A governance committee then sets standards across the firm, and the board sees a regular report.</p>
+                    <p><strong>Evidence to expect:</strong> a name beside every Tier 1 and Tier 2 system, and the date the board or its risk committee last reviewed AI risk.</p>
+                </div>
+            </section>
+
+            <div class="section-divider"><span class="divider-icon">◈</span></div>
+
+            <!-- Section 7 -->
+            <section class="article-section" id="pc-close">
+                <h2 class="section-heading">
+                    <span class="heading-number">07</span>
+                    <span class="heading-text">The Framework at Work: A P&amp;C Carrier's Quarter-End Close</span>
+                </h2>
+
+                <div class="content-block">
+                    <p class="lead-paragraph">Here is how the five controls apply to a finance example. It starts with a point that is easy to miss: <strong>most of a financial close is not an AI problem.</strong></p>
+
+                    <h3 class="sub-heading">First, the right tool for the job</h3>
+                    <p>Matching the claims system's paid losses to the general ledger, rolling forward case reserves and tying ceded recoverables to treaty terms are deterministic tasks. The same inputs must produce the same answer every time, and the logic can be written down. Rules engines, reconciliation software and ERP automation already do this work well. They are cheaper, faster, repeatable and fully auditable.</p>
+                    <p>A large language model produces probable answers, not guaranteed ones. Putting one in charge of the matching would add risk without adding value. An auditor would rightly ask why a probabilistic tool is doing work that a rule does perfectly.</p>
+                    <p>The language model earns its place where the work involves reading and explaining:</p>
+                    <ul class="article-list">
+                        <li><strong>Reading unstructured documents:</strong> reinsurance treaty wordings and endorsements, broker bordereaux, adjuster notes and loss-run PDFs. The model turns them into data that the rules can then check.</li>
+                        <li><strong>Investigating exceptions:</strong> when the rules flag a break, the model gathers the context, such as the claim file, the relevant treaty clause and the timing of a payment, and proposes a likely cause.</li>
+                        <li><strong>Drafting explanations:</strong> first-draft reconciliation narratives and variance commentary for an accountant to review.</li>
+                    </ul>
+
+                    <div class="callout callout-insight">
+                        <div class="callout-icon">◈</div>
+                        <div class="callout-content">
+                            <h4>The First Governance Decision</h4>
+                            <p>This is the division of labor from Article 5: <strong>rules own the numbers, AI owns the reading and the explanation, and people own the judgment and the signature.</strong> It is also the first governance decision, made before any tiering. Ask whether the task needs AI at all. The lowest-risk AI system is the one you never deployed where a rule would have done the job.</p>
+                        </div>
+                    </div>
+
+                    <h3 class="sub-heading">The design and its controls</h3>
+                    <p>A property and casualty carrier designs its quarter-end close this way. A rules engine performs the matching across its GAAP and statutory ledgers, clearing the large majority of items as it always has. An AI agent works only on the exceptions the rules cannot clear. For each one, it reads the source documents, proposes a cause, and drafts the correcting entry and its explanation.</p>
+
+                    <div class="table-wrap">
+                        <table class="gov-table">
+                            <thead>
+                                <tr><th scope="col">Control</th><th scope="col">What the carrier does</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><th scope="row">See it</th><td>The agent goes into the AI register before the pilot starts. The entry records its vendor, the documents and subledgers it reads, and the fact that it can propose journal entries. The rules engine is recorded as conventional automation. It stays under the carrier's existing IT general controls, not the AI program.</td></tr>
+                                <tr><th scope="row">Tier it</th><td>Impact is high, because errors reach the financial statements and the statutory Annual Statement, including Schedule P and Schedule F. Autonomy is set by design. The agent investigates and proposes, and a person decides, which makes it Tier 2. If it could post entries, it would be Tier 1.</td></tr>
+                                <tr><th scope="row">Bound it</th><td>The agent gets its own identity with read-only access to the claims, reinsurance and GL subledgers and the treaty document library. It cannot change the matching rules, so it cannot alter what counts as reconciled. It can draft entries but cannot post them. It has no access to reserve-setting: case reserves stay with claims, and IBNR stays with the actuaries. Any proposed adjustment above a set amount goes to a named accountant. The controller can suspend the agent with one call.</td></tr>
+                                <tr><th scope="row">Prove it</th><td>Before go-live, the agent runs in parallel with the team for two closes, and its proposed causes and entries are compared with the team's. For every exception, the log records the documents the agent read, the cause it proposed and the entry it drafted, all in the carrier's own systems. Internal audit samples the log each quarter.</td></tr>
+                                <tr><th scope="row">Own it</th><td>The corporate controller is the named owner. The agent appears in the quarterly AI risk report to the audit committee.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p>Now suppose an auditor picks an adjustment to ceded reinsurance recoverables that began as an exception. The auditor asks the three questions from the opening:</p>
+                    <ul class="article-list">
+                        <li><strong>Who approved it?</strong> The accountant named in the approval log.</li>
+                        <li><strong>What evidence supported that approval?</strong> The rules engine's exception report, the treaty clause the agent cited and the cause it proposed. All of them sit in the log that internal audit sampled last quarter.</li>
+                        <li><strong>Who owns the outcome?</strong> The corporate controller, whose name is in the register and in the report to the audit committee.</li>
+                    </ul>
+                    <p>The carrier can answer in minutes, and the answers hold up. Neither organization in the opening cases could do that.</p>
+                    <p>Notice also what the controls did not do: they did not slow the close. The rules engine still clears the bulk of the items. The agent takes on the slow part, investigating each exception and writing the first draft, which is where the hours go. People spend their time deciding.</p>
+                </div>
+            </section>
+
+            <div class="section-divider"><span class="divider-icon">◈</span></div>
+
+            <!-- Section 8 -->
+            <section class="article-section" id="indicators">
+                <h2 class="section-heading">
+                    <span class="heading-number">08</span>
+                    <span class="heading-text">What to Watch: Seven Indicators for Leadership</span>
+                </h2>
+
+                <div class="content-block">
+                    <p class="lead-paragraph">A framework needs numbers behind it, or it turns back into a policy. These seven fit on one page and can be reported quarterly.</p>
+
+                    <div class="table-wrap">
+                        <table class="gov-table">
+                            <thead>
+                                <tr><th scope="col">Indicator</th><th scope="col">What it tells you</th><th scope="col">Control</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Share of AI systems inventoried and tiered</td><td>Whether you can see what you run</td><td>See it, Tier it</td></tr>
+                                <tr><td>Unsanctioned AI tools detected this quarter</td><td>How much use sits outside your controls</td><td>See it</td></tr>
+                                <tr><td>Share of Tier 1 and 2 systems with documented limits</td><td>Whether high-risk systems are bounded</td><td>Bound it</td></tr>
+                                <tr><td>Share of agent actions logged</td><td>Whether you could reconstruct what happened</td><td>Prove it</td></tr>
+                                <tr><td>Human override rate</td><td>How often people correct the AI, and whether that is changing</td><td>Prove it</td></tr>
+                                <tr><td>Time to detect and roll back an AI error</td><td>How long a mistake stays live</td><td>Bound it, Prove it</td></tr>
+                                <tr><td>Share of Tier 1 and 2 systems with a named owner</td><td>Whether accountability is real</td><td>Own it</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="callout callout-warning">
+                        <div class="callout-icon">⚠</div>
+                        <div class="callout-content">
+                            <h4>Two Cautions on Reading Them</h4>
+                            <p>A shadow AI count of zero usually means nobody is looking. And an override rate near zero is not always good news. It can mean the AI is accurate, or that reviewers have stopped reading what they approve.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider"><span class="divider-icon">◈</span></div>
+
+            <!-- Section 9 -->
+            <section class="article-section" id="first-30">
+                <h2 class="section-heading">
+                    <span class="heading-number">09</span>
+                    <span class="heading-text">Your First 30 Days</span>
+                </h2>
+
+                <div class="content-block">
+                    <p class="lead-paragraph">None of this requires a new department, and with AI doing much of the analysis, the first pass no longer takes a quarter.</p>
+
+                    <ul class="article-list">
+                        <li><strong>Week 1: See.</strong> Use AI-assisted discovery across single sign-on logs, expense reports, network traffic and vendor contracts to find AI tools and AI features. Ask procurement which vendors have added AI. Launch an amnesty so staff report the tools they use without fear. Confirm in writing which governance standard covers generative and agentic AI.</li>
+                        <li><strong>Week 2: Tier and bound.</strong> Let AI draft an impact and autonomy rating and proposed limits for every system, then have people review and decide. Remove AI from any task a rule could do. For anything in Tier 1 or 2, write down its access, its approval thresholds and who can switch it off. Name an owner for each.</li>
+                        <li><strong>Weeks 3 and 4: Prove and report.</strong> Use AI to assemble evidence packs for your two or three highest-tier systems. Book the first AI risk report, with the seven indicators, with the board's risk committee.</li>
+                    </ul>
+
+                    <p>Some things will not compress. Trust in an amnesty takes time to build. Executives must personally accept ownership. A kill switch has to be tested for real, and a parallel run like the carrier's spans two quarter-end closes. The board meets on its own calendar.</p>
+
+                    <blockquote class="pull-quote">
+                        <p>AI compresses the analysis. It does not compress accountability. Decisions, tests and board oversight still run on human time.</p>
+                    </blockquote>
+
+                    <p>At day 30 the program will be incomplete, and that is fine. You will have a list, a ranking, limits on the systems that matter most, and names beside them. That is more than most organizations can show today.</p>
+                </div>
+            </section>
+
+            <div class="section-divider"><span class="divider-icon">◈</span></div>
+
+            <!-- Section 10 -->
+            <section class="article-section" id="takeaway">
+                <h2 class="section-heading">
+                    <span class="heading-number">10</span>
+                    <span class="heading-text">The Takeaway</span>
+                </h2>
+
+                <div class="content-block">
+                    <p class="lead-paragraph">Go back to the questions from the opening. Who approved that? What evidence supported the approval? Who owns the outcome?</p>
+
+                    <p>Being able to name an approver quickly does not justify giving AI more to do. What justifies more autonomy is evidence. That means limits that have been tested, logs that show what the system did, a track record over several cycles, and an owner who has accepted accountability for the result. Expand an agent's authority one tier at a time, and only after the controls at its current tier have shown they work.</p>
+
+                    <p>A company that builds that evidence can move AI from pilot to production with its board's confidence. A company that cannot will keep its agents in pilot, or learn the answers the hard way.</p>
+
+                    <div class="callout callout-insight">
+                        <div class="callout-icon">◈</div>
+                        <div class="callout-content">
+                            <h4>See it. Tier it. Bound it. Prove it. Own it.</h4>
+                            <p>Five controls and five questions, and none of them needs a data science degree to ask.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-divider"><span class="divider-icon">◈</span></div>
+
+            <!-- Section 11 -->
+            <section class="article-section" id="article7-teaser">
+                <h2 class="section-heading">
+                    <span class="heading-number">11</span>
+                    <span class="heading-text">What Comes Next: Building an AI Strategy</span>
+                </h2>
+
+                <div class="content-block">
+                    <p class="lead-paragraph">Article 7, "Building an AI Strategy: From Vision to Roadmap," picks up where this one ends. With controls in place, the next question is where AI should go first and how to sequence the investments that follow.</p>
+
+                    <div class="callout callout-insight">
+                        <div class="callout-icon">◈</div>
+                        <div class="callout-content">
+                            <h4>The Series So Far</h4>
+                            <p>Article 1: Why leadership needs a clear understanding of what AI is and what it isn't.<br>
+                            Article 2: The data behind the model: where AI knowledge comes from and why it matters.<br>
+                            Article 3: The anatomy of a large language model: what is inside, and what that means for your use cases.<br>
+                            Article 4: How machines learn: training methods and human parallels.<br>
+                            Article 5: The AI toolbox, from chatbots to autonomous agents, applied to P&amp;C general account investment accounting.<br>
+                            <strong>Article 6: AI risk and governance: the executive's control framework.</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Article Footer -->
+            <footer class="article-footer">
+                <div class="sources-section">
+                    <h4 class="sources-title">Sources</h4>
+                    <ul class="sources-list">
+                        <li>Federal Reserve, <a href="https://www.federalreserve.gov/frrs/guidance/supervisory-guidance-on-model-risk-management.htm" target="_blank" rel="noopener noreferrer"><em>SR 26-2, Supervisory Guidance on Model Risk Management</em></a></li>
+                        <li>IBM, <a href="https://newsroom.ibm.com/2025-07-30-ibm-report-13-of-organizations-reported-breaches-of-ai-models-or-applications,-97-of-which-reported-lacking-proper-ai-access-controls" target="_blank" rel="noopener noreferrer"><em>2025 Cost of a Data Breach Report</em></a>, July 30, 2025</li>
+                        <li>European Commission, <a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" target="_blank" rel="noopener noreferrer"><em>AI Act regulatory framework and timeline</em></a></li>
+                        <li>NAIC, <a href="https://content.naic.org/sites/default/files/legal-adoption-map-ai-model-bulletin.pdf" target="_blank" rel="noopener noreferrer"><em>AI Model Bulletin adoption map</em></a></li>
+                        <li>Gartner, <a href="https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027" target="_blank" rel="noopener noreferrer"><em>Gartner Predicts Over 40% of Agentic AI Projects Will Be Canceled by End of 2027</em></a>, June 25, 2025</li>
+                        <li>Australian Government Department of Finance, <a href="https://www.finance.gov.au/sites/default/files/foi-25-26-084-document-1.pdf" target="_blank" rel="noopener noreferrer"><em>FOI release: correspondence on the Deloitte report</em></a></li>
+                        <li><em>Moffatt v. Air Canada</em>, 2024 BCCRT 149, Civil Resolution Tribunal of British Columbia</li>
+                        <li>Cybersecurity Dive, <em>IBM Cost of a Data Breach 2025: shadow AI findings</em></li>
+                        <li>SecureW2, <em>OWASP Top 10 for Agentic Applications</em>; HUMAN, <em>The OWASP Top 10 for Agentic Applications for defenders</em></li>
+                        <li>Winston Taylor, <em>AI Act rules on high-risk AI delayed</em>; Cooley, <em>Digital AI Omnibus delays key deadlines</em></li>
+                        <li>Shook, Hardy &amp; Bacon, <em>Colorado hits reset on AI regulation</em>; CASRAI, <em>The Colorado AI Act explained</em></li>
+                        <li>Loyola University Chicago compliance blog, <em>Executive order and state AI laws</em></li>
+                        <li>Crowell, <em>NAIC intensifies AI regulatory focus</em>; Mondaq, <em>NAIC AI regulatory focus and the evaluation tool pilot</em>; Openlayer, <em>NAIC AI Model Bulletin</em></li>
+                        <li>Orrick, <em>Agencies overhaul model risk management guidance</em>; RiskTemplate, <em>What changed from SR 11-7</em></li>
+                        <li>SecureW2, <em>NIST AI RMF vs. ISO 42001</em>; AgentScout, <em>NIST to ISO 42001 crosswalk</em></li>
+                        <li>Computerworld, <em>AI governance failure at a consulting firm exposes gaps in quality controls</em>; CTV News / Associated Press, <em>Partial refund for a government report with AI-generated errors</em></li>
+                        <li>American Bar Association, <em>Tribunal confirms companies remain liable for information provided by an AI chatbot</em></li>
+                        <li>The P&amp;C carrier in Section 7 is illustrative. Regulatory details are current as of November 2026 and are changing quickly. This article is general information, not legal advice.</li>
+                    </ul>
+                </div>
+                <div class="article-cta">
+                    <h3 class="cta-title">Continue the Series</h3>
+                    <p>From the foundations of AI, through the AI toolbox, to the controls that let leaders scale it with confidence, the series continues with building an AI strategy, from vision to roadmap.</p>
+                    <p>Follow along to build the executive fluency you need to lead confidently and decisively in the age of AI.</p>
+                </div>
+                <div class="article-actions">
+                    <a href="index.html#subscribe" class="action-btn primary">
+                        <span>Subscribe to The Brief</span>
+                    </a>
+                    <button class="action-btn secondary share-article">
+                        <span>Share Article</span>
+                    </button>
+                </div>
+            </footer>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    <span class="logo-icon">◈</span>
+                    <span class="logo-text">AI<span class="logo-accent">Fluency</span></span>
+                </a>
+                <p class="footer-tagline">Empowering the next generation of AI-literate leadership.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Series</h4>
+                    <a href="article-1.html">Article 1: What AI Is</a>
+                    <a href="article-2.html">Article 2: Models &amp; Data</a>
+                    <a href="article-3.html">Article 3: Anatomy of LLMs</a>
+                    <a href="article-4.html">Article 4: How Machines Learn</a>
+                    <a href="article-5.html">Article 5: The AI Toolbox</a>
+                    <a href="article-6.html">Article 6: AI Risk &amp; Governance</a>
+                    <a href="index.html#series">All Articles</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <a href="#">Executive Guides</a>
+                    <a href="#">Webinars</a>
+                    <a href="#">Podcasts</a>
+                    <a href="#">Research</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <a href="#">About</a>
+                    <a href="https://www.linkedin.com/in/peter-m-6168a448/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="#">Partnerships</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">© 2026 AI Fluency by Peter Muiruri. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/peter-m-6168a448/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+                <a href="#" aria-label="Twitter">𝕏</a>
+                <a href="index.html#subscribe" aria-label="Newsletter">✉</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="article.js"></script>
+</body>
+</html>

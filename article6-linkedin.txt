@@ -1,0 +1,30 @@
+ARTICLE 6: LINKEDIN POST
+AI Risk & Governance: The Executive's Control Framework
+Author: Peter Muiruri
+---
+
+A 237-page government report cited papers that were never written. An airline's chatbot contradicted the airline's own policy, and a tribunal ordered the airline to pay.
+
+In both cases, the hard questions came afterward:
+
+Who approved that? What evidence supported that approval? And who owns the outcome?
+
+In Article 6 of Executive AI Mastery, I set out five controls that answer those questions before anyone has to ask them:
+
+1. See it. Know every AI system you run, including the ones staff adopted on their own.
+2. Tier it. Rank each one by impact and autonomy.
+3. Bound it. Limit what it can reach and do, and test the kill switch.
+4. Prove it. Keep the tests, the monitoring and the logs.
+5. Own it. One named business executive for every system.
+
+Why now? Gartner predicts that more than 40% of agentic AI projects will be cancelled by the end of 2027, partly because of inadequate risk controls. IBM found that one in five breached organizations reported a breach involving shadow AI.
+
+One regulatory point for financial services: in April 2026, U.S. banking regulators replaced SR 11-7 with guidance that excludes generative and agentic AI from its scope. If your governance standard was modeled on SR 11-7, check that it explicitly covers both.
+
+The full article applies the framework to a P&C carrier's quarter-end close, starting with a point many AI pitches skip: most of the close is deterministic and belongs to rules engines, not LLMs. The rules do the matching. The AI agent reads treaties and bordereaux, investigates exceptions and drafts explanations. People decide. The article also lays out a 30-day plan and seven indicators a board can track.
+
+The bottom line: AI earns more autonomy one tier at a time, through demonstrated controls and clear ownership.
+
+Read the full article: https://aieasytouse.com/article-6.html
+
+#AIGovernance #AIRisk #AgenticAI #PropertyCasualty #InsuranceAccounting #RiskManagement #ExecutiveAI

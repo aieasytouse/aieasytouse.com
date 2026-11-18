@@ -324,29 +324,70 @@ function initMobileMenu() {
 
 /**
  * Newsletter Form Handling
+ * Sends the email plus a Cloudflare Turnstile token (proof of a human) to the
+ * subscribe Lambda, which verifies the token and emails the sign-up.
  */
-document.querySelector('.newsletter-form')?.addEventListener('submit', function(e) {
+document.querySelector('.newsletter-form')?.addEventListener('submit', async function(e) {
     e.preventDefault();
 
-    const input = this.querySelector('input');
-    const button = this.querySelector('button');
+    const form = this;
+    const input = form.querySelector('input[type="email"]');
+    const button = form.querySelector('button[type="submit"]');
+    const status = form.querySelector('.form-status');
     const originalText = button.innerHTML;
+    const tokenField = form.querySelector('[name="cf-turnstile-response"]');
+    const token = tokenField ? tokenField.value : '';
 
-    // Simulate submission
+    const setStatus = (message, kind) => {
+        status.textContent = message;
+        status.dataset.kind = kind || '';
+    };
+    const resetCheck = () => { if (window.turnstile) window.turnstile.reset(form.querySelector('.cf-turnstile')); };
+
+    if (!input.value.trim() || !input.checkValidity()) {
+        setStatus('Please enter a valid email address.', 'error');
+        input.focus();
+        return;
+    }
+    if (!token) {
+        setStatus('Please confirm you are human using the check below the email field.', 'error');
+        return;
+    }
+
     button.innerHTML = '<span>Subscribing...</span>';
     button.disabled = true;
+    setStatus('', '');
 
-    setTimeout(() => {
+    try {
+        const res = await fetch(form.dataset.endpoint, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                email: input.value.trim(),
+                token,
+                company: form.querySelector('[name="company"]').value,
+                page: window.location.href
+            })
+        });
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok || !data.ok) throw new Error(data.error || 'Something went wrong. Please try again.');
+
         button.innerHTML = '<span>Subscribed!</span>';
         button.style.background = '#10b981';
         input.value = '';
-
+        setStatus('Thank you. You are on the list for The Brief.', 'success');
         setTimeout(() => {
             button.innerHTML = originalText;
             button.style.background = '';
             button.disabled = false;
-        }, 2000);
-    }, 1500);
+        }, 3000);
+    } catch (err) {
+        button.innerHTML = originalText;
+        button.disabled = false;
+        setStatus(err.message || 'Something went wrong. Please try again.', 'error');
+    } finally {
+        resetCheck();
+    }
 });
 
 /**

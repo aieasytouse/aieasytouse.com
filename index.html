@@ -481,9 +481,10 @@
                 <span class="newsletter-label">The Brief</span>
                 <h2 class="newsletter-title">Weekly intelligence for leaders navigating the AI transition</h2>
                 <p class="newsletter-description">Join 47,000+ executives receiving curated insights, frameworks, and strategic analysis every Thursday.</p>
-                <form class="newsletter-form">
+                <form class="newsletter-form" data-endpoint="https://jwx46n5rtgttcz2j7by2kwrzei0jiqwj.lambda-url.us-east-1.on.aws/" novalidate>
                     <div class="form-group">
-                        <input type="email" placeholder="your@email.com" required>
+                        <label for="subscribe-email" class="sr-only">Email address</label>
+                        <input type="email" id="subscribe-email" name="email" placeholder="your@email.com" autocomplete="email" maxlength="254" required>
                         <button type="submit">
                             <span>Subscribe</span>
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
@@ -491,6 +492,12 @@
                             </svg>
                         </button>
                     </div>
+                    <div class="form-trap" aria-hidden="true">
+                        <label for="subscribe-company">Company</label>
+                        <input type="text" id="subscribe-company" name="company" tabindex="-1" autocomplete="off">
+                    </div>
+                    <div class="cf-turnstile" data-sitekey="0x4AAAAAAGGUwXtJqSTO_WmN" data-theme="auto" data-size="flexible" data-action="subscribe"></div>
+                    <p class="form-status" role="status" aria-live="polite"></p>
                     <p class="form-note">No spam. Unsubscribe anytime. Read by leaders at Fortune 500 companies.</p>
                 </form>
             </div>
@@ -591,6 +598,7 @@
         </div>
     </footer>
 
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     <script src="script.js"></script>
 </body>
 </html>

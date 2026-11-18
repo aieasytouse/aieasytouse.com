@@ -2042,3 +2042,45 @@ body:hover .cursor-glow {
         grid-template-columns: 1fr;
     }
 }
+
+/* Subscribe form: human check, status, accessibility */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.form-trap {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.newsletter-form .cf-turnstile {
+    margin-top: 16px;
+    min-height: 65px;
+}
+
+.form-status {
+    min-height: 1.25em;
+    margin-top: 12px;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.form-status[data-kind="error"] { color: #ef4444; }
+.form-status[data-kind="success"] { color: #10b981; }
+
+.form-group button:disabled {
+    opacity: 0.8;
+    cursor: wait;
+    transform: none;
+}

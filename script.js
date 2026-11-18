@@ -349,8 +349,14 @@ document.querySelector('.newsletter-form')?.addEventListener('submit', async fun
         input.focus();
         return;
     }
+    const consent = form.querySelector('[name="consent"]');
+    if (!consent.checked) {
+        setStatus('Please tick the box to confirm you are a person and want to receive The Brief.', 'error');
+        consent.focus();
+        return;
+    }
     if (!token) {
-        setStatus('Please confirm you are human using the check below the email field.', 'error');
+        setStatus('Please wait for the Cloudflare check below the email field to finish, then try again.', 'error');
         return;
     }
 
@@ -365,6 +371,7 @@ document.querySelector('.newsletter-form')?.addEventListener('submit', async fun
             body: JSON.stringify({
                 email: input.value.trim(),
                 token,
+                consent: consent.checked,
                 company: form.querySelector('[name="company"]').value,
                 page: window.location.href
             })
@@ -375,6 +382,7 @@ document.querySelector('.newsletter-form')?.addEventListener('submit', async fun
         button.innerHTML = '<span>Subscribed!</span>';
         button.style.background = '#10b981';
         input.value = '';
+        consent.checked = false;
         setStatus('Thank you. You are on the list for The Brief.', 'success');
         setTimeout(() => {
             button.innerHTML = originalText;

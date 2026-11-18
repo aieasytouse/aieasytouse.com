@@ -2084,3 +2084,23 @@ body:hover .cursor-glow {
     cursor: wait;
     transform: none;
 }
+
+.form-consent {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 14px;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    color: var(--text-secondary);
+    cursor: pointer;
+}
+
+.form-consent input {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    accent-color: var(--accent-primary);
+    cursor: pointer;
+}

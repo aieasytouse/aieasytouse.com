@@ -37,12 +37,16 @@ export const handler = async (event) => {
   const token = String(data.token || '');
   const honeypot = String(data.company || '');
   const page = String(data.page || '').slice(0, 300);
+  const consent = data.consent === true;
 
   // Bots fill hidden fields; pretend success so they learn nothing.
   if (honeypot) return reply(200, { ok: true });
 
   if (email.length > 254 || !EMAIL_RE.test(email)) {
     return reply(400, { ok: false, error: 'Please enter a valid email address.' });
+  }
+  if (!consent) {
+    return reply(400, { ok: false, error: 'Please tick the box to confirm you want to receive The Brief.' });
   }
   if (!token) {
     return reply(400, { ok: false, error: 'Please complete the human verification.' });
@@ -74,6 +78,7 @@ export const handler = async (event) => {
     `Submitted: ${when}`,
     `Page:      ${page || 'unknown'}`,
     'Verified:  Cloudflare Turnstile (human check passed)',
+    "Consent:   Ticked \"I'm a person and I'd like to receive The Brief.\"",
   ].join('\n');
 
   try {
